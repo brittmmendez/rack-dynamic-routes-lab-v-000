@@ -6,6 +6,11 @@ def call(env)
 
   if req.path.match(/items/)
     item_name=req.path.split("/items/").last
+    item=@@items.find {|i| i.name==item_name}
+
+    resp.write "#{item.price}"
+
+    
 
   else
     resp.write "Route not found"
@@ -14,3 +19,10 @@ def call(env)
 end
 
 end
+
+
+
+
+
+
+  
