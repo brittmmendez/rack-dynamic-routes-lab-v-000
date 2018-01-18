@@ -10,7 +10,7 @@ def call(env)
 
     resp.write "#{item.price}"
 
-    
+
 
   else
     resp.write "Route not found"
@@ -19,10 +19,3 @@ def call(env)
 end
 
 end
-
-
-
-
-
-
-  
